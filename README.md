@@ -122,6 +122,6 @@ Depois utilize:
 ![Histórico](images/historico.png)
 ```
 
-## 👨‍💻 Autor
+## Autora
 
 Desenvolvido por **Alexsandra Monteiro Ribeiro**.
