@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
+<!-- Início do documento HTML e define o idioma como português do Brasil -->
+
+<head>
+    <!-- Configurações da página -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar caracteres especiais, como acentos e cedilha -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz com que a página seja responsiva em dispositivos móveis -->
+
+    <title>Registrador de Tempos</title>
+    <!-- Título exibido na aba do navegador -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importa o arquivo de estilos CSS -->
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header class="topbar">
+
+        <!-- Nome da aplicação -->
+        <div class="marca">
+            <span class="ponteiro"></span>
+            REGISTRADOR DE TEMPOS
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="principal">
+
+            <!-- Link para a página inicial -->
+            <a href="index.html" class="ativo">Início</a>
+
+            <!-- Link para a página de histórico -->
+            <a href="historico.html">Histórico</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+        <!-- Área que contém os campos do formulário -->
+        <div class="campos-data-hora">
+
+            <section>
+
+                <!-- Título da seção -->
+                <p class="text-ponto">Relógio de ponto</p>
+
+                <!-- Campo para selecionar a data -->
+                <div class="campo">
+
+                    <label for="dataRegistro">Data:</label>
+
+                    <input type="date" id="dataRegistro">
+
+                </div>
+
+                <!-- Campo para selecionar a hora -->
+                <div class="campo">
+
+                    <label for="horaRegistro">Hora:</label>
+
+                    <input type="time" id="horaRegistro">
+
+                </div>
+
+                <!-- Campo opcional para descrição -->
+                <div class="campo-descricao">
+
+                    <label for="descricao">
+                        Descrição (opcional)
+                    </label>
+
+                    <input type="text" id="descricao" maxlength="200" placeholder="ex.: reunião com cliente"
+                        autocomplete="off" />
+
+                </div>
+
+                <!-- Botão responsável por registrar as informações -->
+                <button class="botao-registrar" id="botao-registrar" type="button">
+
+                    Registrar
+
+                </button>
+
+                <!-- Área onde será exibida a confirmação do registro -->
+                <p class="confirmacao" id="confirmacao" role="status" aria-live="polite">
+
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Importa o arquivo JavaScript responsável pelas funcionalidades -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

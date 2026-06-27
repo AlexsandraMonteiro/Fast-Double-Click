@@ -1,0 +1,13 @@
+{
+  "name": "registrador-de-tempos",
+  "version": "1.0.0",
+  "description": "Front-end + back-end para registrar e consultar tempos, com persistência em JSON.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

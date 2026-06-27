@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
+<!-- Início do documento HTML e define o idioma como português do Brasil -->
+
+<head>
+
+    <!-- Configurações da página -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar caracteres especiais, como acentos e cedilha -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna a página responsiva em dispositivos móveis -->
+
+    <title>Registrador de Tempos</title>
+    <!-- Título exibido na aba do navegador -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importa o arquivo de estilos CSS -->
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header class="topbar">
+
+        <!-- Nome da aplicação -->
+        <div class="marca">
+            <span class="ponteiro"></span>
+            REGISTRADOR DE TEMPOS
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="principal">
+
+            <!-- Link para a página inicial -->
+            <a href="index.html" class="ativo">Início</a>
+
+            <!-- Link para a página de histórico -->
+            <a href="historico.html">Histórico</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+        <!-- Área principal do histórico -->
+        <div class="conteudo-historico">
+
+            <!-- Cabeçalho da seção de histórico -->
+            <!-- CORRIGIDO: cabecalho-historico (estava cabecalho-hitorico) -->
+            <div class="cabecalho-historico">
+
+                <div>
+
+                    <!-- Texto de identificação da seção -->
+                    <p class="text-ponto">Livro de registros</p>
+
+                    <!-- Título da página -->
+                    <h1 class="titulo">
+                        Histórico de registros
+                    </h1>
+
+                    <!-- Descrição da funcionalidade da página -->
+                    <p class="subtitulo">
+                        Busque, filtre por período e reordene os tempos registrados.
+                    </p>
+
+                </div>
+
+                <!-- Exibe a quantidade de registros encontrados -->
+                <p class="contagem" id="contagem"></p>
+
+            </div>
+
+            <!-- Formulário de filtros -->
+            <form class="filtros" id="form-filtros">
+
+                <!-- Campo para pesquisar pela descrição -->
+                <div class="campo-filtro">
+
+                    <label for="busca">
+                        Buscar na descrição
+                    </label>
+
+                    <input type="text" id="busca" placeholder="ex.: reunião com cliente" autocomplete="off" />
+
+                </div>
+
+                <!-- Campo para selecionar a data inicial -->
+                <div class="campo-filtro">
+
+                    <label for="data-inicio">
+                        Data de início
+                    </label>
+
+                    <input type="date" id="data-inicio" />
+
+                </div>
+
+                <!-- Campo para selecionar a data final -->
+                <div class="campo-filtro">
+
+                    <label for="data-fim">
+                        Data de fim
+                    </label>
+
+                    <input type="date" id="data-fim" />
+
+                </div>
+
+                <!-- Lista de opções de ordenação -->
+                <div class="campo-filtro">
+
+                    <label for="ordenar">
+                        Ordenar por
+                    </label>
+
+                    <select id="ordenar">
+
+                        <option value="dataHora-desc">
+                            Mais recentes primeiro
+                        </option>
+
+                        <option value="dataHora-asc">
+                            Mais antigos primeiro
+                        </option>
+
+                        <option value="descricao-asc">
+                            Ordem alfabética
+                        </option>
+
+                        <option value="descricao-desc">
+                            Ordem alfabética inversa
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Botão responsável por aplicar os filtros -->
+                <button type="button" class="botao-filtrar" id="botao-filtrar">
+
+                    Filtrar
+
+                </button>
+
+                <!-- Botão para limpar os filtros -->
+                <button type="button" class="botao-limpar" id="botao-limpar">
+
+                    Limpar
+
+                </button>
+
+            </form>
+
+            <!-- ========================================================= -->
+            <!-- NOVO: Área onde os registros serão exibidos               -->
+            <!-- ========================================================= -->
+            <div id="area-resultados"></div>
+
+        </div>
+
+    </main>
+
+    <!-- Importa o arquivo JavaScript responsável pelas funcionalidades da página -->
+    <script src="historico.js"></script>
+
+</body>
+
+</html>

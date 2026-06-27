@@ -1,0 +1,17 @@
+[
+  {
+    "id": "3eace760-9a14-4efc-9e41-eb2f5a0671de",
+    "dataHora": "2026-06-26T17:30:00.000Z",
+    "descricao": "Teste via PowerShell"
+  },
+  {
+    "id": "5d0ac9a2-b4ae-41b7-94f7-95d00b76024c",
+    "dataHora": "2026-06-29T17:00:00.000Z",
+    "descricao": "Jogo do Brasil"
+  },
+  {
+    "id": "b731f122-df19-466d-b432-0c3ba0b95385",
+    "dataHora": "2007-01-18T13:05:00.000Z",
+    "descricao": "Dia do meu nascimento"
+  }
+]
