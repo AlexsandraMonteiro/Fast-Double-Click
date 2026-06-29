@@ -41,7 +41,7 @@ git clone https://github.com/AlexsandraMonteiro/Fast-Double-Click.git
 ### 2. Entre na pasta
 
 ```bash
-cd Registrador-de-Tempos
+cd Fast-Double-Click
 ```
 
 ### 3. Execute o servidor
